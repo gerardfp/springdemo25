@@ -23,4 +23,9 @@ public class PersonController {
         personRepository.save(new Person("anonymous-" + ThreadLocalRandom.current().nextInt()));
         return personRepository.findAll();
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "It works";
+    }
 }
