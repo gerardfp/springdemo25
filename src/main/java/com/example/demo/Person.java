@@ -13,4 +13,11 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.AUTO)
     public UUID person_id;
     public String name;
+
+    public Person(){}
+
+    public Person(String name) {
+        this.name = name;
+
+    }
 }

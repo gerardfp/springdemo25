@@ -5,5 +5,5 @@ docker build -t gerardfp/springdemo .
 
 docker login
 
-docker push
+docker push gerardfp/springdemo
 ```
